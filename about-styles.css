@@ -30,7 +30,7 @@
 
 ul {
   list-style: none;
-  /* width: 380px; */
+  width: 780px;
   display: flex;
   flex-direction: row;
   align-items: center;
