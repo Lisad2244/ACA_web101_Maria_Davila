@@ -4,35 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contact</title>
+  <link rel="stylesheet" href="./contactstyles.css">
+  <link rel="stylesheet" href="./contact.js">
 </head>
 <body>
   
-<form action="" method="post">
+  <form action="" method="get">
   <div class="form-group">
     <label for="fName">First Name</label>
     <input type="text" required>
   </div>
 
-  <form action="" method="post">
+  <form action="" method="get">
     <div class="form-group">
       <label for="lName">Last Name</label>
       <input type="text" required>
     </div>
 
-    <form action="" method="post">
+  <form action="" method="get">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" required>
+    </div>
+
+    <div>
+      How did you hear about me?
+      <div>
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" name="classmate" id="classmate">
+      </div>
+      <div>
+        <label for="resumeSubmission">Resume Submission</label>
+        <input type="checkbox" name="resumeSubmission" id="resumeSubmission">
+      </div>
+      <label for="linkedIn">LinkedIn</label>
+        <input type="checkbox" name="linkedIn" id="linkedIn">
+      </div>
+      <div>
+        <label for="codingAcademyRec">Coding Academy Rec</label>
+        <input type="checkbox" name="codingAcademyRec" id="codingAcademyRec">
+      </div>
+    </div>
+    <div>
+
+  <form action="" method="get">
+    <div class="form-group">
+      <label for="comments">Comments</label>
+      <textarea name="comments" id="" cols="30" rows="10" 
+      minlength="20" maxlength="500"></textarea>
+    </div>
+
+    <form action="" method="get">
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" required>
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="" cols="30" rows="10" 
+        minlength="20" maxlength="500"></textarea>
       </div>
 
-      <form action="" method="post">
-        <div class="form-group">
-          <label for="comments">Comments</label>
-          <textarea name="comments" id="" cols="30" rows="10"></textarea>
-        </div>
-
-      <button onclick="submitform()">submit</button>
+    <button onclick="submitform()">submit</button>
       
 </form>
 <div class="box"></div>

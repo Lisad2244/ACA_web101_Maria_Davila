@@ -15,25 +15,13 @@
   border: solid black 4px;
 }
 
-/* body,
-html {
-  height: 40%;
-} */
-
 .header {
   grid-column: 1/2;
   grid-row: 1/3;
   z-index: 3;
   padding: 10px;
- 
-  
-  /* The image used */
   background-image: url(./circuit.jpg);
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +30,7 @@ html {
 
 ul {
   list-style: none;
-  width: 380px;
+  /* width: 380px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,30 +51,24 @@ ul {
   grid-column: 1/3;
   grid-row: 1/2;
   padding: 10px;
-  background-image: url(./circuit.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
   text-align: center;
   color: black;
 }
 
-#content2 {
+/* #content2 {
   text-align: left;
   padding: 20px;
   grid-column: 2/3;
-  grid-row: 1/2;
+  grid-row: 1/2; */
   /* text-align: center;
   padding: 20px; */
-}
+/* } */
 
 #content3 {
   z-index: 1;
   background: rgb(207, 221, 240);
   grid-column: 1/2;
   grid-row: 2/4;
-
-  
   background-image: url(./Semi.jpg);
   padding-bottom: 0px;
   background-position: center;
@@ -96,9 +78,14 @@ ul {
 
 p {
   font-size: 18px;
-  /* letter-spacing: 0.1em; */
   text-align:left;
   
+}
+
+.bar {
+  width:100%; 
+  color:black;
+  size:1; 
 }
 
 #content4 {
@@ -116,11 +103,10 @@ p {
     font-weight: 600;
     color: black;
     text-align: center;
-    height: 100vh;
-    width: 576px;
-    display: grid;
+    height: 100%;
+    /* width: 576px; */
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     border: solid black 4px;
   }
   
@@ -129,69 +115,34 @@ p {
   .header {
     grid-column: 1/2;
     grid-row: 1/2;
-    /* z-index: 3; */
-    /* padding: 10px; */
-   
-    
-    /* The image used */
-    background-image: url(./circuit.jpg);
-  
-    /* Full height */
-    height: 100vh;
-    width: 576px;
-  
-    /* Center and scale the image nicely */
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    
+    height: 100px;
+    width: 576px;   
   }
-  
-  ul {
-    list-style: none;
-    width: 380px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  #name {
-    z-index: 4;
-    text-align: left;
-    letter-spacing: 0.2rem;
-    font-size: 2em;
-    color: white;
-  }
+ 
   #content1 {
     z-index: 2;
     grid-column: 1/2;
     grid-row: 1/3;
     padding: 10px;
-    background-image: url(./circuit.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    height: 100px;
     text-align: center;
     color: black;
   }
   
-  #content2 {
+  /* #content2 {
     text-align: left;
     padding: 20px;
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 2/3; */
     /* text-align: center;
-    padding: 20px; */
-  }
+    padding: 20px;*/
+  /* } */
   
   #content3 {
-    z-index: 1;
+    /* z-index: 0; */
     background: rgb(207, 221, 240);
     grid-column: 1/2;
-    grid-row: 4/5;
-  
-    
+    grid-row: 1/3;
     background-image: url(./Semi.jpg);
     padding-bottom: 0px;
     background-position: center;
@@ -201,14 +152,14 @@ p {
   
   p {
     font-size: 10px;
-    /* letter-spacing: 0.1em; */
     text-align:left;
     
   }
   
   #content4 {
     background-color: rgb(207, 221, 240);
+    padding: 2px;
     grid-column: 1/2;
-    grid-row: 5/6;
+    grid-row: 3/4;
   }
 }
