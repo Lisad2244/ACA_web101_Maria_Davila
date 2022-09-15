@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-
+body {
+    background-color: rgb(207, 221, 240);
+}
 
 form {
     margin-left:auto;
@@ -15,18 +17,7 @@ form {
     text-shadow: 1px 1px 1px #FFF;
     border:1px solid #E4E4E4;
 }
-h1 {
-    font-size: 25px;
-    padding: 0px 0px 10px 40px;
-    display: block;
-    border-bottom:1px solid #E4E4E4;
-    margin: -10px -15px 30px -10px;;
-    color: #888;
-}
-h1>span {
-    display: block;
-    font-size: 11px;
-}
+
 label {
     display: block;
     margin: 0px;
@@ -73,16 +64,18 @@ select {
 textarea{
     height:100px;
 }
-.button {
-    background: #E27575;
+button {
+    background: #1442a5;
     border: none;
     padding: 10px 25px 10px 25px;
     color: #FFF;
     box-shadow: 1px 1px 5px #B6B6B6;
     border-radius: 3px;
-    text-shadow: 1px 1px 1px #9E3F3F;
+    text-shadow: 1px 1px 1px #5e73a1;
     cursor: pointer;
 }
-.button:hover {
-    background: #CF7A7A
-} */
+
+button:hover {
+    background: #0856f1
+}
+

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link rel="stylesheet" href="./contactstyles.css">
+  <link rel="stylesheet" href="./contact-styles.css">
   <link rel="stylesheet" href="./contact.js">
 </head>
 <body>
@@ -29,7 +29,7 @@
     </div>
 
     <div>
-      How did you hear about me?
+      <p> How did you hear about me? </p>
       <div>
         <label for="classmate">Classmate</label>
         <input type="checkbox" name="classmate" id="classmate">
@@ -38,6 +38,7 @@
         <label for="resumeSubmission">Resume Submission</label>
         <input type="checkbox" name="resumeSubmission" id="resumeSubmission">
       </div>
+      <div>
       <label for="linkedIn">LinkedIn</label>
         <input type="checkbox" name="linkedIn" id="linkedIn">
       </div>
@@ -46,21 +47,24 @@
         <input type="checkbox" name="codingAcademyRec" id="codingAcademyRec">
       </div>
     </div>
-    <div>
 
-  <form action="" method="get">
+    <form action="" method="get">
+      <div class="form-group">
+        <label for="yes_no_radio">Would you like to be contacted?</label>
+        <p>
+        <input type="radio" name="yes_no">Yes</input>
+        </p>
+        <p>
+        <input type="radio" name="yes_no">No</input>
+        </p>
+      </div>
+
+    <form action="" method="get">
     <div class="form-group">
       <label for="comments">Comments</label>
       <textarea name="comments" id="" cols="30" rows="10" 
       minlength="20" maxlength="500"></textarea>
     </div>
-
-    <form action="" method="get">
-      <div class="form-group">
-        <label for="comments">Comments</label>
-        <textarea name="comments" id="" cols="30" rows="10" 
-        minlength="20" maxlength="500"></textarea>
-      </div>
 
     <button onclick="submitform()">submit</button>
       
