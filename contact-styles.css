@@ -9,8 +9,8 @@ body {
 form {
     margin-left:auto;
     margin-right:auto;
-    max-width: 500px;
-    background: #F7F7F7;
+    max-width: 900px;
+    background: #f7f7f7;
     padding: 25px 15px 25px 10px;
     font: 12px Georgia, "Times New Roman", Times, serif;
     color: #888;
@@ -49,18 +49,7 @@ input[type="text"], input[type="email"], textarea, select {
 textarea{
     padding: 5px 3px 3px 5px;
 }
-select {
-    background: #FFF url('down-arrow.png') no-repeat right;
-    background: #FFF url('down-arrow.png') no-repeat right);
-    appearance:none;
-    -webkit-appearance:none; 
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    width: 70%;
-    height: 35px;
-    line-height: 25px;
-}
+
 textarea{
     height:100px;
 }
@@ -78,4 +67,10 @@ button {
 button:hover {
     background: #0856f1
 }
-
+/* *******MEDIA QUERIES************** */
+@media (max-width: 576px) {
+    form {
+        background: #e5e8ec;
+        width: 400px;
+    }
+}
